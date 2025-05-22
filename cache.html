@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest" lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>BADERLINK Nuevo Host PSFREE Sin Flash - Instalar Caché</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+        text-align: center;
+    }
+    h1 {
+        margin-top: 30px;
+    }
+    #msgs {
+        font-size: 30px;
+        margin-top: 77px;
+        margin-bottom: 455px;
+    }
+</style>
+</head>
+<body>
+<script>
+history.replaceState(null,null,
+'index.html');var histlength=history.length;history.go(-histlength);
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));setTimeout(function(){window.msgs.innerHTML="La instalación del caché está comenzando, por favor espere " + Percent + "%";},500)}
+function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="El caché se instaló exitosamente. ✔";},1500);setTimeout(function(){window.msgs.innerHTML="Ahora cierra el navegador y ábrelo nuevamente para usarlo sin INTERNET";},3500);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+</script>
+<h1>BADERLINK Nuevo Host PSFREE Sin Flash - Iniciar Caché</h1>
+<hr>
+<br>
+<div class="warning" style="background-color: rgba(255, 0, 0, 0.2); border: 1px solid red; padding: 10px; margin: 10px auto; border-radius: 5px; text-align: center; color: white; max-width: 80%;">
+            <strong>importante</strong> 
+            <ul style="text-align: right; list-style-position: inside;">
+                <li>Es posible que encuentre problemas de estabilidad la primera vez que abra la página; reinicie su dispositivo y vuelva a intentarlo.</li>
+                <li>La nueva vulnerabilidad no requiere una unidad flash USB.</li>
+                <li>GoldHEN se activa automáticamente después de unos segundos.</li>
+    </ul>
+</div>
+<h1 id="msgs">جاري بدء التخزين المؤقت...</h1>
+</body>
+</html>
