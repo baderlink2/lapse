@@ -8,6 +8,7 @@ img.jpg
 fonts/LiberationMono-Regular.ttf
 alert.mjs
 config.mjs
+lapse.mjs.old
 lapse.mjs
 payload.bin
 payload.js
