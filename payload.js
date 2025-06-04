@@ -28,6 +28,13 @@ function load_exploit(){
     setTimeout(function(){document.getElementById('log').innerHTML ='<h1 style=color:#ebfa89>*Loading Exploit..Please Wait !!!</h1>'; }, 50); 
 }
 
+function load_exploit_success(){
+    document.getElementById('notify').style.display = ''
+    document.getElementById('notify').className = 'notification'
+    setTimeout(function(){document.getElementById('log').innerHTML ='<h1 style=color:#ebfa89>*Jailbreak is already loaded !!!</h1>'; }, 50); 
+    setTimeout(ani2, 2000);
+}
+
 function load_exploit_done(){
     document.getElementById('notify').style.display = ''
     document.getElementById('notify').className = 'notification'
@@ -50,7 +57,7 @@ function loadHomeBrew() {
     }else {
         document.getElementById('notify').style.display = ''
         document.getElementById('notify').className = 'notification'
-        setTimeout(function(){document.getElementById('log').innerHTML ='<h1 style=color:#ebfa89>*GoldHEN v2.4b18.3 Loaded !!!</h1>'; }, 50);   
+        setTimeout(function(){document.getElementById('log').innerHTML ='<h1 style=color:#ebfa89>*Jailbreak Success !!! GoldHEN v2.4b18.3 Loaded !!!</h1>'; }, 50);   
         setTimeout(ani2, 4000);
     }
 }

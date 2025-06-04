@@ -112,7 +112,7 @@ function toogle_payload(PLfile) {
    call_nze('pthread_create', pthread, 0, loader_addr, payload_buffer);
    }
  };
- //localStorage.passcount = ++localStorage.passcount;window.passCounter.innerHTML=localStorage.passcount;
+ localStorage.passcount = ++localStorage.passcount;window.passCounter.innerHTML=localStorage.passcount;
  EndTimer();
 }
 
@@ -1045,7 +1045,7 @@ function make_aliased_pktopts(sds) {
             }
         }
     }
-    //localStorage.failcount = ++localStorage.failcount;window.failCounter.innerHTML=localStorage.failcount;
+    localStorage.failcount = ++localStorage.failcount;window.failCounter.innerHTML=localStorage.failcount;
     die('failed to make aliased pktopts');
 }
 
@@ -1720,8 +1720,8 @@ export async function kexploit() {
     try {
         if (sysi('setuid', 0) == 0) {
             log("Not running kexploit again.");
-            load_exploit_done();
-            Exploit_done();
+            load_exploit_success();
+            //Exploit_done();
             return;
         }
     }
